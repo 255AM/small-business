@@ -6,6 +6,7 @@ document.querySelector('body').addEventListener('click', clickEvent => {
         document.querySelector('.employee-form').innerHTML= ''
         document.querySelector('.employees-container').innerHTML= ''
         document.querySelector('.landing').innerHTML= ""
+        document.querySelector('.computers-container').innerHTML=''
         computerFormBuilder()
         
         }

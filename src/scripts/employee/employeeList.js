@@ -1,5 +1,5 @@
 import { htmlEmployee } from "./employee.js";
-import { getEmployees, useEmployees } from "./employeeDataProvider.js";
+import { getEmployees, useEmployees, deleteEmployee } from "./employeeDataProvider.js";
 
 // Handle browser-generated click event in component
 
@@ -8,6 +8,7 @@ if (clickEvent.target.id === 'view-employees-nav-link') {
     document.querySelector('.employee-form').innerHTML= ''
     document.querySelector('.employees-container').innerHTML= ''
     document.querySelector('.landing').innerHTML= ""
+    document.querySelector('.computers-container').innerHTML=''
     employeesList()
     console.log('fda');
     }
@@ -21,8 +22,19 @@ export const employeesList = () => {
         const employees = useEmployees()
         document.querySelector('.employees-container').innerHTML = ' '
         employees.map(element => {
-            document.querySelector('.employees-container').innerHTML += htmlEmployee(element)
+            document.querySelector('.employees-container').innerHTML += 
+            htmlEmployee(element)
+             
         });
     }) 
 }
 
+//also for writerpage call upon delete button push
+document.querySelector('body').addEventListener("click", (eventObject) => {
+    if (eventObject.target.id.startsWith("deleteEmployee")) {
+      const employeeToDelete = eventObject.target.id.split("-")[2]
+      deleteEmployee(employeeToDelete).then(() => {
+          employeesList()
+    })
+  }
+  });
