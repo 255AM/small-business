@@ -4,6 +4,7 @@ import { employeeFormBuilder } from "./employee/formbuilder.js";
 import {   } from './employee/employeeList.js'
 import {   } from './computer/saveComputer.js'
 import {   } from './computer/computerFormBuilder.js'
+import {  } from './computer/computerList.js'
 
 //employeesList()
 //employeeFormBuilder()

@@ -8,7 +8,9 @@ export const htmlEmployee = (employee) => {
             <div class="last-name">Last Name: ${employee.lastName}</div>
             <div class="model">Model: ${employee.computer.model}</div>
             <div class="year">Year: ${employee.computer.year}</div>
+            <button id="deleteEmployee--${employee.id}">Delete</button>
+            <br>
         </div>
-        <br>
+        
     `
 }

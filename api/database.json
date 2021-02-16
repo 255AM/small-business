@@ -6,28 +6,33 @@
       "id": "8"
     },
     {
-      "model": "dell",
-      "year": "1915",
-      "id": "22"
+      "model": "the good kind",
+      "year": "1901",
+      "id": "9898"
     },
     {
-      "model": "geroegecomputer",
-      "year": "6602",
-      "id": "99"
+      "model": "nes",
+      "year": "og",
+      "id": "1987"
+    },
+    {
+      "model": "tree",
+      "year": "tree",
+      "id": "23"
     }
   ],
   "employees": [
     {
-      "firstName": "Erica",
-      "lastName": "Peter",
-      "computerId": "8",
-      "id": 1
-    },
-    {
       "firstName": "Lucas",
       "lastName": "Lane",
-      "computerId": "99",
+      "computerId": "9898",
       "id": 2
+    },
+    {
+      "firstName": "Chance",
+      "lastName": "d",
+      "computerId": "23",
+      "id": 4
     }
   ]
 }
