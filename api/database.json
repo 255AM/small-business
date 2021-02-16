@@ -1,17 +1,33 @@
 {
-    "computers": [
-        {
-            "id": 1,
-            "model": "Macbook Pro",
-            "year": 2015
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "firstName": "Rainu",
-            "lastName": "Ittycheriah",
-            "computerId": 1
-        }
-    ]
+  "computers": [
+    {
+      "model": "hp1",
+      "year": "1983",
+      "id": "8"
+    },
+    {
+      "model": "dell",
+      "year": "1915",
+      "id": "22"
+    },
+    {
+      "model": "geroegecomputer",
+      "year": "6602",
+      "id": "99"
+    }
+  ],
+  "employees": [
+    {
+      "firstName": "Erica",
+      "lastName": "Peter",
+      "computerId": "8",
+      "id": 1
+    },
+    {
+      "firstName": "Lucas",
+      "lastName": "Lane",
+      "computerId": "99",
+      "id": 2
+    }
+  ]
 }
